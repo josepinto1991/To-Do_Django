@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends 'html/base.html' %}
+
+{% block content %}
+    <div class="container">
+        <h1>inicio</h1>
+       
+        <a href="{% url 'login' %}"><h4>Iniciar sesión</h4></a>
+        <a href="{% url 'register' %}"><h4>Registrarse</h4></a>
+
+    </div>
+{% endblock %}

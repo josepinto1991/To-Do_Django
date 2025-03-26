@@ -1,0 +1,252 @@
+body {
+    background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+    font-family: Arial, sans-serif;
+    color:  #191A1A;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: radial-gradient(circle, rgba(232,253,255,1) 0%, rgba(188,234,247,1) 100%);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #191A1A;
+}
+.container-sidebar {
+    max-width: auto;
+    margin: 20px auto;
+    background-image: linear-gradient(90deg, rgba(188,234,247,1) 0%, rgba(232,253,255,1) 100%);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #43b5b5;
+}
+
+
+.sidebar a {
+    color: #080404;
+    width: 80%; 
+    margin: 0 auto;
+    padding: 10px; 
+}
+
+.center {
+    text-align: center;
+    margin: 40px auto;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #23527c;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #0c561e;
+}
+
+.completed2 {
+    opacity: 0.8;
+}
+.actions {
+    margin-top: 5px;  
+    margin-bottom: 5px; 
+
+}
+.task-actions button {
+    margin-left: 10px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sidebar {
+    margin-top: 5px;  
+    margin-bottom: 5px; 
+
+}
+.sidebar h3 {
+
+    float: right;
+    margin-top: 5px;  
+    margin-bottom: 5px; 
+}
+
+.sidebar-actions a {
+    margin-left: 10px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.create-task {
+    margin-top: 20px;
+}
+
+.create-task form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-task label {
+    margin-bottom: 10px;
+}
+
+.create-task textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.create-task button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-task button[type="submit"]:hover {
+    background-color: #23527c;
+}
+
+.modify_task {
+    margin-top: 20px;
+}
+
+.modify_task form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.modify_task label {
+    margin-bottom: 10px;
+}
+
+.modify_task textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modify_task button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modify_task button[type="submit"]:hover {
+    background-color: #23527c;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #23527c;
+}
+
+.status-badge {
+    margin-left: 10px;
+    color: #38a169;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"], input[type="submit"] {
+    width: 110px;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover, input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.form-container {
+    width: 350px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+label {
+    align-items: center;
+    text-align: left;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.errorlist {
+    color: red;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.errorlist li {
+    margin-bottom: 10px;
+}
+/*  
+.left {
+    float: left;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.right {
+    float: right;
+    margin-top: auto;
+    margin-bottom: auto;
+}  */

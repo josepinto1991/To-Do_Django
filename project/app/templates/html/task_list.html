@@ -1,0 +1,46 @@
+{% extends 'html/base.html' %}
+{% load static %}
+{% block content %}
+
+        <div class="container-sidebar">
+            <div class="sidebar">
+                <h3>
+                        <a href="{% url 'create_task' %}">Crear nueva tarea</a> | 
+                        <a href="{% url 'logout' %}">cerrar sesión</a>
+                </h3>
+            </div>
+        </div>
+
+    <div class="container">
+        <h1>Lista de Tareas 📑</h1>
+       
+        <ul>
+            {% for task in tasks %}
+                <li>
+                    <h4>Tarea {{ forloop.counter }}</h4>
+                    
+                    {% if task.completed %}
+                        <span class="completed"><p>{{ task.task|linebreaks }}</p></span>
+                        <span class="completed2">Estatus: Completado ✅</span>
+                    {% else %}
+                        <span class="completed2">{{ task.task|linebreaks }}</span> 
+                        <span class="completed2">Estatus: Pendiente ⏳</span>
+                    {% endif %} 
+                    
+                    <div class="actions">
+                    {% if task.completed %}
+                        <a href="{% url 'reopen_task' task.pk %}">Reabrir</a> |
+                    {% endif %}
+                    {% if not task.completed %}
+                        <a href="{% url 'complete_task' task.pk %}">Completar</a> |
+                    {% endif %}
+                        <a href="{% url 'modify_task' task.pk %}">Modificar</a>
+                    |   <a href="{% url 'delete_task' task.pk %}">Eliminar</a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+
+{% endblock %}

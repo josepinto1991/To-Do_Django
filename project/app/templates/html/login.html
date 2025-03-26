@@ -1,0 +1,21 @@
+{% extends 'html/base.html' %}
+{% block content %}
+        <div class="container">
+            <div class="form-container">
+                <h2>Iniciar sesión</h2>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit">Iniciar sesión</button>
+                </form>
+                <div>
+                    <h4>
+                        <a href="{% url 'index' %}"> Volver al inicio.</a>
+                    </h4>
+                    <h4> No estas registrado? 
+                        <a href="{% url 'register' %}">Registrarte</a>
+                    </h4>
+                </div>
+            </div> 
+        </div>
+{% endblock %}
